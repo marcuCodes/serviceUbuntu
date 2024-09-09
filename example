@@ -1,0 +1,13 @@
+[Unit]
+Description=Descrição do serviço
+After=network.target
+
+[Service]
+WorkingDirectory=/dir/exec/command
+ExecStart=command
+Restart=always
+User=user
+Group=group
+
+[Install]
+WantedBy=multi-user.target
